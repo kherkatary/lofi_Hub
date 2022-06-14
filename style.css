@@ -1,0 +1,243 @@
+body {
+    margin: 0;
+
+}
+
+
+/* HEADING SECTION */
+#heading {
+    text-align: center;
+    position: absolute;
+    color: aliceblue;
+    font-size: 4rem;
+    text-shadow: 2px 2px rgba(222, 111, 222, 0.3);
+
+    top: 35%;
+    /* for center-ing */
+    left: 0;
+    right: 0;
+
+    font-family: 'Comfortaa', cursive;
+}
+
+/* FULLSCREEN */
+#full {
+    position: absolute;
+    left: 15.5%;
+    top: 31%;
+    border: 2px solid rgba(249, 168, 105, 0.1);
+    width: 30px;
+    height: 30px;
+    color: rgb(254, 203, 113);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    backdrop-filter: blur(50px);
+    z-index: 2;
+
+}
+
+
+/* CONTROL CENTER */
+
+section {
+    position: absolute;
+    top: 30%;
+    left: 1%;
+
+}
+
+#controlCenter {
+    border: 5px solid rgb(249, 249, 249, 0.05);
+    border-radius: 10px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    backdrop-filter: blur(15px);
+
+}
+
+#controlCenter div {
+
+    margin: 10px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+#controlCenter button {
+    width: 100px;
+    padding: 3px;
+}
+
+/* CLOCK */
+
+#clock {
+    border: 2px;
+    color: rgb(245, 197, 134);
+    text-align: center;
+    display: block;
+}
+
+#clock div {
+    padding: 2px;
+}
+
+
+
+
+
+
+/* MUSIC PLAYER SETTING */
+
+#playerControl {
+    display: flex;
+    border-radius: 20px;
+    width: 20%;
+    height: 60px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(20px);
+
+    /* positioning */
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+
+
+}
+
+#playerControl svg {
+    margin: 4%;
+    padding: 4px;
+    color: rgb(239, 194, 134);
+}
+
+
+#playerControl svg:hover{
+    color: rgb(255, 252, 249);
+}
+
+
+
+
+
+/* SCENES SECTION */
+
+li {
+    list-style: none;
+}
+
+/* close button */
+#menuCloseButton{
+
+    display: none;
+    position:absolute;
+    z-index: 2;
+    bottom: 35%;
+    right: 48.5%;
+    color: rgb(246, 202, 137);
+}
+#menuCloseButton:hover{
+       color:wheat ;
+}
+
+
+
+#photos {
+    display: none;
+    position: absolute;
+
+    border: 5px solid rgb(249, 249, 249, 0.05);
+    border-radius: 10px;
+    height: 280px;
+    width: 90vw;
+    overflow-x: scroll;
+    bottom: 7%;
+    left: 5%;
+    white-space: nowrap;
+    backdrop-filter: blur(10px);
+
+
+
+}
+
+
+#photos div {
+    display: inline-block;
+
+    border-radius: 5px;
+
+
+    height: 180px;
+    width: 20%;
+    margin: 2.5%;
+    margin-left: 10 px;
+    overflow: hidden;
+
+}
+
+#photos div:hover {
+    border: 4px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+}
+
+#photos img {
+    width: 140%;
+}
+
+/* custom scrollbar */
+#photos::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+#photos::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+#photos::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    outline: 1px solid rgb(249, 249, 249, 0.3);
+
+}
+
+
+
+
+
+#sceneMenu {
+    border: 1px solid black;
+    width: 12%;
+    position: absolute;
+    right: 5%;
+    top: 40%;
+}
+
+#sceneMenu li {
+    margin: 2px;
+}
+
+#scene {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+#scene img {
+    margin-top: -7%;
+    height: 120vh;
+}

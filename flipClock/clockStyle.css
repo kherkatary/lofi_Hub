@@ -1,0 +1,66 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Lato", sans-serif;
+	background: #000000;
+	height: 100%;
+
+}
+hr{
+	border: 4px solid rgb(0, 0, 0);
+	position: absolute;
+	width: 99%;
+	top: 43%;		
+}
+
+#box {
+	display: flex;
+	justify-content: center;
+	margin-top: 2%;
+	height: 90vh;
+	overflow-y: hidden;
+	background-color: #000000;
+
+}
+
+
+
+#period{
+	color: white;
+    font-family: 'Koulen', cursive;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 63%;
+    left: 11.5%;
+}
+
+
+#second{
+	color: white;
+    font-family: 'Koulen', cursive;
+    font-size: 2.5rem;
+    position: absolute;
+	right:  11.5%;
+	top: 62.5%;
+}
+
+
+#hour,
+#minute {
+	border-radius: 30px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 30rem;
+	font-family: 'Koulen', cursive;
+	height: 75vh;
+	width: 35%;
+	color: white;
+	margin: 1%;
+
+	background-color: rgb(14, 14, 14);
+	padding: 2%;
+
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootsctrap css link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <!-- goofgle fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="favicon.png">
+
+
+    <!-- local css -->
+    <link rel="stylesheet" href="style.css">
+    <title> lofiHub</title>
+</head>
+
+<body>
+
+    <!-- //close button -->
+
+    <div id="menuCloseButton">
+        <h1>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x-circle"
+                viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+        </h1>
+    </div>
+
+
+
+    <!-- intro headings /welcome page intro -->
+    <div id="heading">
+        <h1>welcome to lofi Hub</h1>
+        <p>lofi study and chill music</p>
+    </div>
+
+
+
+    <!-- fullscreen -->
+    <div id="full">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fullscreen"
+            viewBox="0 0 16 16">
+            <path
+                d="M1.5 1a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-1 0v-4A1.5 1.5 0 0 1 1.5 0h4a.5.5 0 0 1 0 1h-4zM10 .5a.5.5 0 0 1 .5-.5h4A1.5 1.5 0 0 1 16 1.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 1-.5-.5zM.5 10a.5.5 0 0 1 .5.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 0 14.5v-4a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v4a1.5 1.5 0 0 1-1.5 1.5h-4a.5.5 0 0 1 0-1h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 1 .5-.5z" />
+        </svg>
+    </div>
+
+
+
+
+    <!-- //control center -->
+    <section>
+
+
+        <div id="controlCenter">
+            <!-- CLOCK -->
+            <p id="clock">
+
+                <span id="hour"></span>
+                <span id="minute"></span>
+                <span id="second"></span>
+                <span id="period"></span>
+            </p>
+
+
+            <div>
+
+                <p><button id="sceneGrid" class="btn btn-outline-info">Scenes</button></p>
+                <p><button class="btn btn-outline-success">timer</button></p>
+                <p><button class="btn btn-outline-warning"><a href="flipClock\clockIndex.html" target="_blank"  style="text-decoration: none">flipClock</a></button></p>
+                <p><button class="btn btn-outline-primary">minimal screen</button></p>
+                <p><button class=" btn btn-outline-dark">study to
+                        Reach</button></p>
+
+            </div>
+        </div>
+
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- music player setting -->
+
+    <div id="playerControl">
+        <!-- //previous track -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="currentColor" class="bi bi-caret-left"
+            viewBox="0 0 16 16">
+            <path
+                d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z" />
+        </svg>
+
+        <!-- play button -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="currentColor" class="bi bi-play-circle"
+            viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+            <path
+                d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z" />
+        </svg>
+
+        <!-- next track -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="currentColor" class="bi bi-caret-right"
+            viewBox="0 0 16 16">
+            <path
+                d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z" />
+        </svg>
+
+
+    </div>
+
+
+
+    <!-- SCENE / backgrounds -->
+
+    <div id="scene">
+        <img src="scenes/home.gif" id="change" alt="loadingImage">
+    </div>
+
+
+
+
+
+
+
+    <div id="photos">
+
+        <!-- //photos /scense -->
+        <div><img id="0" class="sceneChange" src="scenes/home.gif" alt=""></div>
+        <div><img id="1" class="sceneChange" src="scenes/scene1.gif" alt=""></div>
+        <div><img id="2" class="sceneChange" src="scenes/scene2.gif" alt=""></div>
+        <div><img id="3" class="sceneChange" src="scenes/scene3.gif" alt=""></div>
+        <div><img id="4" class="sceneChange" src="scenes/scene4.gif" alt=""></div>
+        <div><img id="5" class="sceneChange" src="scenes/scene5.gif" alt=""></div>
+        <div><img id="6" class="sceneChange" src="scenes/scene6.gif" alt=""></div>
+        <div><img id="7" class="sceneChange" src="scenes/scene7.gif" alt=""></div>
+        <div><img id="8" class="sceneChange" src="scenes/scene8.gif" alt=""></div>
+        <div><img id="9" class="sceneChange" src="scenes/scene9.gif" alt=""></div>
+        <div><img id="10" class="sceneChange" src="scenes/scene10.gif" alt=""></div>
+
+
+    </div>
+
+
+
+
+
+    <!-- bootstrap java script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- jquery script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- local script -->
+    <script src="clock.js"></script>
+    <script src="plain.js"></script>
+
+
+</body>
+
+</html>
