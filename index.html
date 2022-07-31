@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- bootsctrap css link -->
+    <!-- bootsctrap css link for buttons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 
 
     <!-- goofgle fonts -->
@@ -25,7 +28,7 @@
 
 <body>
 
-    <!-- //close button -->
+    <!--------------------------------------------------------- //close button --------------------------------------------------------->
 
     <div id="menuCloseButton">
         <h1>
@@ -40,32 +43,49 @@
 
 
 
-    <!-- intro headings /welcome page intro -->
+    <!------------------------------------------------------- intro headings /welcome page intro ------------------------------------------------------- -->
     <div id="heading">
         <h1>welcome to lofi Hub</h1>
         <p>lofi study and chill music</p>
+        <p id="guide"> change scene from the control panel</p>
+
+        
+    </div>
+
+    <div id="embedded">
+        <iframe width="79%" height="100%" scrolling="yes" frameborder="no" 
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/483718232&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=false"></iframe>  <!--visual = false-->
+        <div
+            style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+            <a href="https://soundcloud.com/lofi-hip-hop-music" title="𝗟𝗢𝗙𝗜" target="_blank"
+                style="color: #cccccc; text-decoration: none;">𝗟𝗢𝗙𝗜</a> · <a
+                href="https://soundcloud.com/lofi-hip-hop-music/sets/lofi-hip-hop-beats" title="𝗟𝗢𝗙𝗜"
+                target="_blank" style="color: #cccccc; text-decoration: none;">𝗟𝗢𝗙𝗜</a></div>
+
+
     </div>
 
 
 
-    <!-- fullscreen -->
-    <div id="full">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fullscreen"
-            viewBox="0 0 16 16">
-            <path
-                d="M1.5 1a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-1 0v-4A1.5 1.5 0 0 1 1.5 0h4a.5.5 0 0 1 0 1h-4zM10 .5a.5.5 0 0 1 .5-.5h4A1.5 1.5 0 0 1 16 1.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 1-.5-.5zM.5 10a.5.5 0 0 1 .5.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 0 14.5v-4a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v4a1.5 1.5 0 0 1-1.5 1.5h-4a.5.5 0 0 1 0-1h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 1 .5-.5z" />
-        </svg>
-    </div>
 
 
 
 
-    <!-- //control center -->
+
+    <!-- -------------------------------------------------------//control center --------------------------------------------------------->
     <section>
+        <!-- fullscreen -->
+        <div id="full">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fullscreen"
+                viewBox="0 0 16 16">
+                <path
+                    d="M1.5 1a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-1 0v-4A1.5 1.5 0 0 1 1.5 0h4a.5.5 0 0 1 0 1h-4zM10 .5a.5.5 0 0 1 .5-.5h4A1.5 1.5 0 0 1 16 1.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 1-.5-.5zM.5 10a.5.5 0 0 1 .5.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 0 14.5v-4a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v4a1.5 1.5 0 0 1-1.5 1.5h-4a.5.5 0 0 1 0-1h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 1 .5-.5z" />
+            </svg>
+        </div>
 
 
         <div id="controlCenter">
-            <!-- CLOCK -->
+            <!-- ---------CLOCK -------------->
             <p id="clock">
 
                 <span id="hour"></span>
@@ -78,9 +98,10 @@
             <div>
 
                 <p><button id="sceneGrid" class="btn btn-outline-info">Scenes</button></p>
-                <p><button class="btn btn-outline-success">Timer</button></p>
-                <p><button class="btn btn-outline-warning"><a href="flipClock\clockIndex.html" target="_blank"  style="text-decoration: none">Flip Clock</a></button></p>
-                <p><button class="btn btn-outline-primary">Minimal screen</button></p>
+                <p><button class="btn btn-outline-success">timer</button></p>
+                <p><button class="btn btn-outline-warning"><a href="flipClock\clockIndex.html" target="_blank"
+                            style="text-decoration: none">flipClock</a></button></p>
+                <p><button class="btn btn-outline-primary">minimal screen</button></p>
                 <p><button class=" btn btn-outline-dark">Widgets</button></p>
 
             </div>
@@ -94,53 +115,39 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- music player setting -->
+    <!--------------------------------------------------------- music player setting  ------------------------------------------------------- -->
 
     <div id="playerControl">
+
+        <!-- DESCRIPTION -->
+
+        <h5><i class="bi bi-info-circle"></i></h5>
+
+
+
         <!-- //previous track -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="currentColor" class="bi bi-caret-left"
-            viewBox="0 0 16 16">
-            <path
-                d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z" />
-        </svg>
+
+        <h2><i class="bi bi-chevron-double-left"></i></h2>
+
+
 
         <!-- play button -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="currentColor" class="bi bi-play-circle"
-            viewBox="0 0 16 16">
-            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-            <path
-                d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z" />
-        </svg>
+        <h1><i id="playPause" class="bi bi-play-circle"></i></h1>
+
 
         <!-- next track -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="currentColor" class="bi bi-caret-right"
-            viewBox="0 0 16 16">
-            <path
-                d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z" />
-        </svg>
+        <h2><i class="bi bi-chevron-double-right"></i></h2>
+
+        <!-- Background Noises button-->
+
+        <h5><i class="bi bi-ear"></i></h5>
 
 
     </div>
 
 
 
-    <!-- SCENE / backgrounds -->
+    <!--------------------------------------------------------- SCENE / backgrounds  --------------------------------------------------------->
 
     <div id="scene">
         <img src="scenes/home.gif" id="change" alt="loadingImage">
@@ -154,7 +161,7 @@
 
     <div id="photos">
 
-        <!-- //photos /scense -->
+        <!--------------- //photos /scense ------------->
         <div><img id="0" class="sceneChange" src="scenes/home.gif" alt=""></div>
         <div><img id="1" class="sceneChange" src="scenes/scene1.gif" alt=""></div>
         <div><img id="2" class="sceneChange" src="scenes/scene2.gif" alt=""></div>
@@ -169,31 +176,34 @@
 
 
     </div>
-    
-    <!-- MODAL -->
-    
+
+
+
+
     <div id="modal">
 
         <div id="modalContent">
-            <svg id="modalCloseBtn" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
-                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-              </svg>
+            <svg id="modalCloseBtn" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                class="bi bi-x-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+            </svg>
 
-            
-            
+
+
             <h1> Hey!, Thanks for visiting My website</h1>
-            <p>Sorry for the inconvineince, but Music is not available in this current version, but will be adding music soon enough</p>
+            <p>Sorry for the inconvineince, but only embbeded music is available in the current version, but will be adding our own music
+                soon enough</p>
             <h3>STAY TUNED!!</h3>
             <p>PS: fullscreen recomended</p>
         </div>
     </div>
 
-    
-    
 
 
 
+<!-- ----------------------------------------------------------------  SCRIPT  --------------------------------------------------------------------- -->
 
     <!-- bootstrap java script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
