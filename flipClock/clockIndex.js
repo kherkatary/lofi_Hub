@@ -60,6 +60,23 @@ setInterval(hClock,1000);
 setInterval(mClock,1000);
 setInterval(sClock,1000);
 
+$("#full").click(function () {
+    var screen = document.documentElement;
+
+    //fullscreen-true
+    if (screen.requestFullscreen) {
+        screen.requestFullscreen();
+    }
+
+    else if (screen.exitFullscreen) {
+        screen.exitFullscreen();
+    }
+
+})
+
+
+
+
 
 //backgrounds
 
