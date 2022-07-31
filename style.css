@@ -1,10 +1,11 @@
 body {
     margin: 0;
+    background-color: black;
 
 }
 
 
-/* HEADING SECTION */
+/* -------------------------------------HEADING SECTION --------------------------------------*/
 #heading {
     text-align: center;
     position: absolute;
@@ -20,12 +21,18 @@ body {
     font-family: 'Comfortaa', cursive;
 }
 
-/* FULLSCREEN */
+#guide{
+    font-size: 1rem;
+    
+}
+
+/* -------------------------------------FULLSCREEN -------------------------------------*/
 #full {
     position: absolute;
-    left: 15.5%;
-    top: 31%;
+    left: 1.5vh;
+    top: 4%;
     border: 2px solid rgba(249, 168, 105, 0.1);
+    border-radius: 5px;
     width: 30px;
     height: 30px;
     color: rgb(254, 203, 113);
@@ -35,30 +42,73 @@ body {
     justify-content: center;
 
     backdrop-filter: blur(50px);
+    box-shadow: 2px 0px 15px -3px rgba(0,0,0,0.1),0px 6px 15px -3px rgba(0,0,0,0.1);
     z-index: 2;
 
 }
+#full:hover{
+    color: white;
+    background-color: rgb(105, 101, 101,0.3);
+    cursor: pointer;
+}
+
+/* ------------------------------------- EMBEDDED MUSIC  -------------------------------------*/
+#embedded{
+    width: 18%;
+    height: 20%;
+  position: absolute;
+  z-index: 3;
+  padding: 0.5%;
+  backdrop-filter: blur(10px);
+  overflow-y: hidden;
+
+  margin: 0.5%;
+  text-align: center;
+
+  border: 5px solid rgb(249, 249, 249, 0.05);
+    border-radius: 10px;
 
 
-/* CONTROL CENTER */
+}
+
+#embedded a{
+    text-decoration: none;
+}
+
+#embedded:hover{
+
+    opacity: 1;
+     height: 90vh ; 
+     background-color: rgba(140, 0, 255, 0.2);
+}
+
+
+
+
+
+/* ------------------------------------- CONTROL CENTER ------------------------------------- */
 
 section {
     position: absolute;
-    top: 30%;
-    left: 1%;
+    top: 48%;
+    left: 3%;
 
 }
 
 #controlCenter {
     border: 5px solid rgb(249, 249, 249, 0.05);
     border-radius: 10px;
-    width: 250px;
+    width: 150%;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     backdrop-filter: blur(15px);
 
+}
+
+#controlCenter:hover{
+    background-color: rgba(140, 0, 255, 0.1);
 }
 
 #controlCenter div {
@@ -77,35 +127,51 @@ section {
 #controlCenter button {
     width: 100px;
     padding: 3px;
+    box-shadow: 2px 0px 15px -3px rgba(0,0,0,0.1),0px 6px 15px -3px rgba(0,0,0,0.1);
 }
 
-/* CLOCK */
+.btnStyle{
+    color: white;
+    background-color: rgb(15, 15, 15,0);
+}
+
+
+
+
+/*  ------------------------------------- CLOCK ------------------------------------- */
 
 #clock {
     border: 2px;
     color: rgb(245, 197, 134);
     text-align: center;
     display: block;
+    margin-top: 2%;
 }
 
 #clock div {
     padding: 2px;
 }
+#clock:hover{
+    cursor: default; 
+}
 
 
 
 
 
 
-/* MUSIC PLAYER SETTING */
+/* ------------------------------------- MUSIC PLAYER SETTING ------------------------------------- */
 
 #playerControl {
+
+    /* opacity is zero to hid the element for now */
+    opacity: 0;  
     display: flex;
     border-radius: 20px;
     width: 20%;
     height: 60px;
     margin: auto;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     backdrop-filter: blur(20px);
 
@@ -118,22 +184,22 @@ section {
 
 }
 
-#playerControl svg {
-    margin: 4%;
-    padding: 4px;
+#playerControl i {
+    
     color: rgb(239, 194, 134);
 }
 
 
-#playerControl svg:hover{
+#playerControl i:hover{
     color: rgb(255, 252, 249);
+    cursor: pointer;
 }
 
 
 
 
 
-/* SCENES SECTION */
+/* ------------------------------------- SCENES SECTION ------------------------------------- */
 
 li {
     list-style: none;
@@ -145,7 +211,7 @@ li {
     display: none;
     position:absolute;
     z-index: 2;
-    bottom: 35%;
+    bottom: 29%;
     right: 48.5%;
     color: rgb(246, 202, 137);
 }
@@ -164,7 +230,7 @@ li {
     height: 280px;
     width: 90vw;
     overflow-x: scroll;
-    bottom: 7%;
+    bottom: 3%;
     left: 5%;
     white-space: nowrap;
     backdrop-filter: blur(10px);
@@ -197,7 +263,7 @@ li {
     width: 140%;
 }
 
-/* custom scrollbar */
+/* ------------------------------------- custom scrollbar ------------------------------------- */
 #photos::-webkit-scrollbar {
     width: 0.5em;
 }
@@ -242,7 +308,8 @@ li {
     height: 120vh;
 }
 
-/* MODAL */
+ 
+/*  ------------------------------------- MODAL  ------------------------------------- */
 
 #modal{
     position:absolute;
@@ -271,3 +338,4 @@ li {
    cursor: pointer;
    color: rgb(248, 212, 166);
 }
+
