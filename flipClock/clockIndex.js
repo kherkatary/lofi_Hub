@@ -37,8 +37,8 @@ function mClock() {
 
 
 function sClock() {
-    let clockSound= new Audio("clockSound.wav");
-    clockSound.play();
+    //let clockSound= new Audio("clockSound.wav");
+    //clockSound.play();
 
 
     let date = new Date();
