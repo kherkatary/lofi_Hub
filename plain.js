@@ -61,15 +61,6 @@ $("#menuCloseButton").click(function(){
     })
 
 
-//MODAL CLOSE
-$("#modalCloseBtn").click(function () {
-    $("#modal").css("display", "none");
-})
-//modal automatic close--10sec
-setTimeout(() => {
-    $("#modal").css("display", "none");
-
-}, 15000);
 
 
      
